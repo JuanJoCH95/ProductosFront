@@ -18,10 +18,8 @@
 
 <template>
     <div class="sidebar">
-        <RouterLink to="/consultar" class="menu-item">Consultar</RouterLink>
-        <RouterLink to="/editar" class="menu-item">Editar</RouterLink>
-        <RouterLink to="/eliminar" class="menu-item">Eliminar</RouterLink>
-
+        <RouterLink to="/productos" class="menu-item">Productos</RouterLink>
+        <RouterLink to="/usuarios" class="menu-item">Usuarios</RouterLink>
         <button @click="handleLogout" class="logout-button">Logout</button>
     </div>
 </template>

@@ -14,20 +14,15 @@ const router = createRouter({
           component: () => import('@/components/WelcomePanel.vue')
         },
         { 
-          path: 'consultar', 
-          name: 'consultar', 
-          component: () => import('@/views/ConsultarView.vue') 
-        }/*,
-        { 
-          path: 'editar', 
-          name: 'editar', 
-          component: () => import('@/views/EditarView.vue') 
+          path: 'productos', 
+          name: 'productos', 
+          component: () => import('@/views/ProductosView.vue')
         },
-        { 
-          path: 'eliminar', 
-          name: 'eliminar', 
-          component: () => import('@/views/EliminarView.vue') 
-        }*/
+        {
+          path: 'usuarios',
+          name: 'usuarios', 
+          component: () => import('@/views/UsuariosView.vue') 
+        }
       ]
     }
   ]

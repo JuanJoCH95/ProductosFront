@@ -5,7 +5,7 @@ import { ref, onMounted } from 'vue';
 
 <template>
   <div>
-    <h2>Consulta de Productos</h2>
+    <h2>Consulta de Usuarios</h2>
     <p>Aquí se cargará la tabla de productos desde el backend.</p>
     </div>
 </template>

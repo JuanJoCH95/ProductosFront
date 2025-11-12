@@ -3,31 +3,44 @@
 </script>
 
 <template>
-  <div class="main-layout">
-    <SidebarMenu />
+  <div class="inventory-system-layout">
+    <header class="system-header">
+      <h1>Sistema de Inventario</h1>
+    </header>
     
-    <div class="content-area">
-      <header>
-        <h1>Menú principal</h1>
-      </header>
-      
-      <RouterView /> 
+    <div class="main-content-area">
+      <SidebarMenu class="sidebar-area" />
+      <div class="router-view-area">
+        <RouterView /> 
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-    .main-layout {
-        display: flex; /* Permite que el sidebar y el contenido estén lado a lado */
-        min-height: 100vh;
-    }
-    .content-area {
-        flex-grow: 1; /* Ocupa el espacio restante */
-        padding: 20px;
-    }
-    header {
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
+  .inventory-system-layout {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+  .system-header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff9800;
+  }
+  .main-content-area {
+      display: flex;
+      flex-grow: 1;
+  }
+  .sidebar-area {
+      width: 200px;
+      background-color: #2c3e50;
+      color: white;
+  }
+  .router-view-area {
+      flex-grow: 1;
+      padding: 20px;
+  }
 </style>
