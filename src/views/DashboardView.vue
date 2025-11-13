@@ -21,26 +21,31 @@
   .inventory-system-layout {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      height: 100%;
+      width: 100%;
   }
+
   .system-header {
-      background-color: #333;
-      color: white;
+      background-color: #0f4c75;
+      color: #bbe1fa;
       padding: 15px 20px;
       text-align: center;
-      border-bottom: 2px solid #ff9800;
+      font-size: 1.8em;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 10;
   }
+
   .main-content-area {
       display: flex;
       flex-grow: 1;
+      width: 100%;
   }
-  .sidebar-area {
-      width: 200px;
-      background-color: #2c3e50;
-      color: white;
-  }
+  
   .router-view-area {
       flex-grow: 1;
-      padding: 20px;
+      padding: 25px;
+      background-color: #1a1a2e;
+      overflow-y: auto;
   }
 </style>
