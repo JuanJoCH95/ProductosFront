@@ -23,10 +23,17 @@ export const useAuthStore = defineStore('auth', {
             }
         },
         async logout() {
-            // Llama al endpoint de logout
-            await api.post('/logout'); 
-            this.isLoggedIn = false;
-            this.user = null;
+            try {
+                // Llama al endpoint de logout
+                await api.post('/auth/logout');
+            } catch (error) {
+                console.error('Error al hacer logout en el backend:', error);
+            } finally {
+                // Limpia el estado local sin importar si el backend falla
+                this.isLoggedIn = false;
+                this.user = null;
+                localStorage.removeItem('user');
+            }
         }
     }
 });

@@ -23,17 +23,26 @@
       flex-direction: column;
       height: 100%;
       width: 100%;
+      background-color: #f5f7fa;
   }
 
   .system-header {
-      background-color: #0f4c75;
-      color: #bbe1fa;
-      padding: 15px 20px;
-      text-align: center;
-      font-size: 1.8em;
-      font-weight: bold;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+      color: white;
+      padding: 18px 30px;
+      text-align: left;
+      font-size: 1.6em;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       z-index: 10;
+  }
+
+  .system-header h1 {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
   }
 
   .main-content-area {
@@ -44,8 +53,7 @@
   
   .router-view-area {
       flex-grow: 1;
-      padding: 25px;
-      background-color: #1a1a2e;
       overflow-y: auto;
+      background-color: #f5f7fa;
   }
 </style>
