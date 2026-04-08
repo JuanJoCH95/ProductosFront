@@ -1,38 +1,10 @@
 # ProductosFront
 
-This template should help get you started developing with Vue 3 in Vite.
+Este es un proyecto frontend de un sistema para la gestión de inventario de productos, usuarios y proveedores (consultar, registrar, editar y eliminar). Se comunica con el backend a través de servicios REST; cuenta con un login de autenticación para ingresar a la aplicación y un boton de logout para salir. El proyecto está desarrollado en Vue.js. El editor de código utilizado para la creación del proyecto fue Visual Studio Code.
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## Pasos para configurar el proyecto:
+- 1. Descargar las fuentes de GitHub
+- 2. Tener Node.js y Vue.js instalados
+- 3. Abrir el proyecto en Visual Studio Code
+- 4. En la terminal ejecutar el comando: npm install
+- 5. Para subir el proyecto y probar: npm run dev

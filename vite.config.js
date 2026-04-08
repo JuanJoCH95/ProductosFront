@@ -15,7 +15,8 @@ export default defineConfig({
     proxy: {
       '/productos': 'http://localhost:8080',
       '/auth': 'http://localhost:8080',
-      '/usuarios': 'http://localhost:8080'
+      '/usuarios': 'http://localhost:8080',
+      '/proveedores': 'http://localhost:8080'
     }
   }
 })

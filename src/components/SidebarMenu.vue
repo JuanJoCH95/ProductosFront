@@ -21,6 +21,7 @@
     <div class="sidebar">
         <RouterLink to="/productos" class="menu-item">Productos</RouterLink>
         <RouterLink to="/usuarios" class="menu-item">Usuarios</RouterLink>
+        <RouterLink to="/proveedores" class="menu-item">Proveedores</RouterLink>
         
         <button @click="handleLogout" class="logout-button">Salir</button>
     </div>
